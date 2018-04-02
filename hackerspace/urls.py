@@ -4,10 +4,12 @@ from rest_framework import routers
 
 from whoisin.views import HostViewSet
 from whoisin.nmapthread import NmapThread
+from intercom.views import IntercomViewSet
 from utils import LockedContainer
 
 router = routers.DefaultRouter()
 router.register('hosts', HostViewSet)
+router.register('intercom', IntercomViewSet, base_name='intercom')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
