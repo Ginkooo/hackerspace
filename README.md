@@ -1,4 +1,10 @@
 ABOUT
+=====
+
+It's a hackerspace command centre. Made for Hackerspace-lbn, but it's configurable and make with other places in mind.
+
+
+FEATURES
 ========
 
 Hosts
