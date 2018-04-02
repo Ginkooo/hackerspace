@@ -1,10 +1,21 @@
 import logging
 
 from django.db import models
+from django.contrib.auth.models import User
 
 from whoisin.nmapthread import NmapThread
 
 logger = logging.getLogger(__name__)
+
+try:
+    User.objects.create_superuser('ginkooo', 'czajka@protonmail.com', 'dupa1234')
+except:  # already created
+    pass
+
+try:
+    User.objects.create_user('user', 'user@user.user', 'dupa1234')
+except:
+    pass
 
 
 class Host(models.Model):

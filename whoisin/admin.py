@@ -1,12 +1,6 @@
 from django.contrib import admin
-from django.contrib.auth.models import User
 
 from whoisin.models import Host
-
-try:
-    User.objects.create_superuser('ginkooo', 'czajka@protonmail.com', 'dupa1234')
-except:  # already created
-    pass
 
 
 class HostAdmin(admin.ModelAdmin):
