@@ -8,6 +8,7 @@ from whoisin.filters import IsOnlineFilter
 
 
 class HostViewSet(viewsets.ModelViewSet):
+    """Provide views for Host model"""
     queryset = Host.objects.all()
     serializer_class = HostSerializer
     filter_backends = (DjangoFilterBackend, IsOnlineFilter)
