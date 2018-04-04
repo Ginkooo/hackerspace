@@ -17,6 +17,8 @@ urlpatterns = [
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 ]
 
+
+# start nmapthread here, because urls.py get executed only once
 container = LockedContainer()
 nmap_thread = NmapThread(container)
 nmap_thread.__class__.container = container

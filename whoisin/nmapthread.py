@@ -16,6 +16,11 @@ class NmapThread(Thread):
         super().__init__()
 
     def get_most_complete_nmap_result(self, nm):
+        """run nmap a few times and return longest hostlist
+
+        :param nm: portscanner used to scan for network
+        :type nm: nmap.PortScanner
+        """
         ret_hosts = []
         for i in range(2):
             nm.scan(config.NMAP_NETWORK, arguments=config.NMAP_ARGS)
@@ -25,6 +30,8 @@ class NmapThread(Thread):
         return ret_hosts
 
     def run(self):
+        """constantly update self.container.value with actual online host list.
+        If there is a new unique host, add it to the database."""
         from whoisin.models import Host
         nm = nmap.PortScanner()
         logger.info('Scheduling nmap scanning')

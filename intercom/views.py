@@ -13,6 +13,8 @@ class IntercomViewSet(viewsets.ViewSet):
     permission_classes = (permissions.IsAuthenticated,)
 
     def list(self, request, format=None):
+        """call door opening procedure on authenticated request
+        """
         if type(request.user) == AnonymousUser:
             raise NotAuthenticated()
         IntercomHandler.open()

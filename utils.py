@@ -2,6 +2,8 @@ from threading import Lock
 
 
 class LockedContainer():
+    """Contain ```value``` property, which access to is limited by locks,
+    so it's thread save"""
 
     def __init__(self):
         self.lock = Lock()

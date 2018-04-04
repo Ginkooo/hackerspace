@@ -8,7 +8,7 @@ from whoisin.nmapthread import NmapThread
 logger = logging.getLogger(__name__)
 
 try:
-    User.objects.create_superuser('ginkooo', 'czajka@protonmail.com', 'dupa1234')
+    User.objects.create_superuser('admin', 'admin@admin.admin', 'dupa1234')
 except:  # already created
     pass
 
@@ -19,6 +19,7 @@ except:
 
 
 class Host(models.Model):
+    """Represents unique hosts ever connected to the network"""
     ip = models.GenericIPAddressField()
     mac = models.CharField(max_length=30, unique=True)
     hostname = models.CharField(max_length=50, null=True, blank=True)
