@@ -2,7 +2,7 @@
 
 # ABOUT
 
-It's a hackerspace command centre. Made for [hackerspace-lbn link](www.hackerspace-lbn.pl), but it's configurable and make with other places in mind.
+It's a hackerspace command centre. Made for [hackerspace-lbn link](http://www.hackerspace-lbn.pl), but it's configurable and make with other places in mind.
 
 
 # FEATURES
