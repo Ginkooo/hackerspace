@@ -1,3 +1,10 @@
+Usage
+=====
+* pip install -r requirements.txt
+
+* ./manage.py 0.0.0.0:9000
+
+
 Features
 ========
 
