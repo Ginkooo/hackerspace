@@ -1,0 +1,502 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>whoisin package &mdash; Hackerspace 0.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="utils module" href="utils.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Hackerspace
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="config.html">config module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hackerspace.html">hackerspace package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intercom.html">intercom package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utils.html">utils module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">whoisin package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-whoisin.admin">whoisin.admin module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-whoisin.filters">whoisin.filters module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-whoisin.models">whoisin.models module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-whoisin.nmapthread">whoisin.nmapthread module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-whoisin.serializers">whoisin.serializers module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-whoisin.views">whoisin.views module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-whoisin">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Hackerspace</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">&lt;no title&gt;</a> &raquo;</li>
+        
+      <li>whoisin package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/modules/whoisin.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="whoisin-package">
+<h1>whoisin package<a class="headerlink" href="#whoisin-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-whoisin.admin">
+<span id="whoisin-admin-module"></span><h2>whoisin.admin module<a class="headerlink" href="#module-whoisin.admin" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="whoisin.admin.HostAdmin">
+<em class="property">class </em><code class="descclassname">whoisin.admin.</code><code class="descname">HostAdmin</code><span class="sig-paren">(</span><em>model</em>, <em>admin_site</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/whoisin/admin.html#HostAdmin"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#whoisin.admin.HostAdmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.admin.options.ModelAdmin</span></code></p>
+<dl class="method">
+<dt id="whoisin.admin.HostAdmin.get_readonly_fields">
+<code class="descname">get_readonly_fields</code><span class="sig-paren">(</span><em>request</em>, <em>obj=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/whoisin/admin.html#HostAdmin.get_readonly_fields"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#whoisin.admin.HostAdmin.get_readonly_fields" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook for specifying custom readonly fields.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="whoisin.admin.HostAdmin.media">
+<code class="descname">media</code><a class="headerlink" href="#whoisin.admin.HostAdmin.media" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-whoisin.filters">
+<span id="whoisin-filters-module"></span><h2>whoisin.filters module<a class="headerlink" href="#module-whoisin.filters" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="whoisin.filters.IsOnlineFilter">
+<em class="property">class </em><code class="descclassname">whoisin.filters.</code><code class="descname">IsOnlineFilter</code><a class="reference internal" href="../_modules/whoisin/filters.html#IsOnlineFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#whoisin.filters.IsOnlineFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.filters.BaseFilterBackend</span></code></p>
+<p>Gets only online==True elements</p>
+<dl class="method">
+<dt id="whoisin.filters.IsOnlineFilter.filter_queryset">
+<code class="descname">filter_queryset</code><span class="sig-paren">(</span><em>request</em>, <em>queryset</em>, <em>view</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/whoisin/filters.html#IsOnlineFilter.filter_queryset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#whoisin.filters.IsOnlineFilter.filter_queryset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a filtered queryset.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="whoisin.filters.IsOnlineFilter.get_online">
+<code class="descname">get_online</code><span class="sig-paren">(</span><em>queryset</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/whoisin/filters.html#IsOnlineFilter.get_online"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#whoisin.filters.IsOnlineFilter.get_online" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-whoisin.models">
+<span id="whoisin-models-module"></span><h2>whoisin.models module<a class="headerlink" href="#module-whoisin.models" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="whoisin.models.Host">
+<em class="property">class </em><code class="descclassname">whoisin.models.</code><code class="descname">Host</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/whoisin/models.html#Host"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#whoisin.models.Host" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<p>Represents unique hosts ever connected to the network</p>
+<dl class="exception">
+<dt id="whoisin.models.Host.DoesNotExist">
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="headerlink" href="#whoisin.models.Host.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="whoisin.models.Host.MultipleObjectsReturned">
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="headerlink" href="#whoisin.models.Host.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="whoisin.models.Host.alias">
+<code class="descname">alias</code><a class="headerlink" href="#whoisin.models.Host.alias" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="whoisin.models.Host.hostname">
+<code class="descname">hostname</code><a class="headerlink" href="#whoisin.models.Host.hostname" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="whoisin.models.Host.id">
+<code class="descname">id</code><a class="headerlink" href="#whoisin.models.Host.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="whoisin.models.Host.ip">
+<code class="descname">ip</code><a class="headerlink" href="#whoisin.models.Host.ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="whoisin.models.Host.mac">
+<code class="descname">mac</code><a class="headerlink" href="#whoisin.models.Host.mac" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="whoisin.models.Host.objects">
+<code class="descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#whoisin.models.Host.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whoisin.models.Host.online">
+<code class="descname">online</code><a class="headerlink" href="#whoisin.models.Host.online" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whoisin.models.Host.visible">
+<code class="descname">visible</code><a class="headerlink" href="#whoisin.models.Host.visible" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-whoisin.nmapthread">
+<span id="whoisin-nmapthread-module"></span><h2>whoisin.nmapthread module<a class="headerlink" href="#module-whoisin.nmapthread" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="whoisin.nmapthread.NmapThread">
+<em class="property">class </em><code class="descclassname">whoisin.nmapthread.</code><code class="descname">NmapThread</code><span class="sig-paren">(</span><em>container</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/whoisin/nmapthread.html#NmapThread"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#whoisin.nmapthread.NmapThread" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">threading.Thread</span></code></p>
+<dl class="attribute">
+<dt id="whoisin.nmapthread.NmapThread.container">
+<code class="descname">container</code><em class="property"> = &lt;utils.LockedContainer object&gt;</em><a class="headerlink" href="#whoisin.nmapthread.NmapThread.container" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whoisin.nmapthread.NmapThread.get_most_complete_nmap_result">
+<code class="descname">get_most_complete_nmap_result</code><span class="sig-paren">(</span><em>nm</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/whoisin/nmapthread.html#NmapThread.get_most_complete_nmap_result"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#whoisin.nmapthread.NmapThread.get_most_complete_nmap_result" title="Permalink to this definition">¶</a></dt>
+<dd><p>run nmap a few times and return longest hostlist</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>nm</strong> (<em>nmap.PortScanner</em>) – portscanner used to scan for network</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="whoisin.nmapthread.NmapThread.run">
+<code class="descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/whoisin/nmapthread.html#NmapThread.run"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#whoisin.nmapthread.NmapThread.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>constantly update self.container.value with actual online host list.
+If there is a new unique host, add it to the database.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-whoisin.serializers">
+<span id="whoisin-serializers-module"></span><h2>whoisin.serializers module<a class="headerlink" href="#module-whoisin.serializers" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="whoisin.serializers.HostSerializer">
+<em class="property">class </em><code class="descclassname">whoisin.serializers.</code><code class="descname">HostSerializer</code><span class="sig-paren">(</span><em>instance=None</em>, <em>data=&lt;class 'rest_framework.fields.empty'&gt;</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/whoisin/serializers.html#HostSerializer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#whoisin.serializers.HostSerializer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.serializers.ModelSerializer</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">`Serializer`</span></code> for <code class="docutils literal notranslate"><span class="pre">`Host`</span></code></p>
+<dl class="class">
+<dt id="whoisin.serializers.HostSerializer.Meta">
+<em class="property">class </em><code class="descname">Meta</code><a class="reference internal" href="../_modules/whoisin/serializers.html#HostSerializer.Meta"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#whoisin.serializers.HostSerializer.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="whoisin.serializers.HostSerializer.Meta.fields">
+<code class="descname">fields</code><em class="property"> = ['id', 'ip', 'mac', 'online', 'hostname', 'visible', 'alias']</em><a class="headerlink" href="#whoisin.serializers.HostSerializer.Meta.fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whoisin.serializers.HostSerializer.Meta.model">
+<code class="descname">model</code><a class="headerlink" href="#whoisin.serializers.HostSerializer.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#whoisin.models.Host" title="whoisin.models.Host"><code class="xref py py-class docutils literal notranslate"><span class="pre">whoisin.models.Host</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="whoisin.serializers.HostSerializer.Meta.read_only_fields">
+<code class="descname">read_only_fields</code><em class="property"> = ['ip', 'online', 'mac', 'hostname']</em><a class="headerlink" href="#whoisin.serializers.HostSerializer.Meta.read_only_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="method">
+<dt id="whoisin.serializers.HostSerializer.create">
+<code class="descname">create</code><span class="sig-paren">(</span><em>validated_data</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/whoisin/serializers.html#HostSerializer.create"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#whoisin.serializers.HostSerializer.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>just update existing host alias and visible on create</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>validated_data</strong> – data passed from template</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="whoisin.serializers.HostSerializer.update">
+<code class="descname">update</code><span class="sig-paren">(</span><em>instance</em>, <em>validated_data</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/whoisin/serializers.html#HostSerializer.update"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#whoisin.serializers.HostSerializer.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>redirect validated_data to create, as it is already implementer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>instance</strong> – object instance</li>
+<li><strong>validated_data</strong> – data passed from template</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-whoisin.views">
+<span id="whoisin-views-module"></span><h2>whoisin.views module<a class="headerlink" href="#module-whoisin.views" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="whoisin.views.HostViewSet">
+<em class="property">class </em><code class="descclassname">whoisin.views.</code><code class="descname">HostViewSet</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/whoisin/views.html#HostViewSet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#whoisin.views.HostViewSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.viewsets.ModelViewSet</span></code></p>
+<p>Provide views for Host model</p>
+<dl class="attribute">
+<dt id="whoisin.views.HostViewSet.basename">
+<code class="descname">basename</code><em class="property"> = None</em><a class="headerlink" href="#whoisin.views.HostViewSet.basename" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whoisin.views.HostViewSet.filter_backends">
+<code class="descname">filter_backends</code><em class="property"> = (&lt;class 'django_filters.rest_framework.backends.DjangoFilterBackend'&gt;, &lt;class 'whoisin.filters.IsOnlineFilter'&gt;)</em><a class="headerlink" href="#whoisin.views.HostViewSet.filter_backends" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whoisin.views.HostViewSet.filter_fields">
+<code class="descname">filter_fields</code><em class="property"> = ['alias', 'mac', 'visible', 'hostname', 'ip']</em><a class="headerlink" href="#whoisin.views.HostViewSet.filter_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whoisin.views.HostViewSet.get_permissions">
+<code class="descname">get_permissions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/whoisin/views.html#HostViewSet.get_permissions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#whoisin.views.HostViewSet.get_permissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allow only admin to modify stuff</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="whoisin.views.HostViewSet.queryset">
+<code class="descname">queryset</code><em class="property"> = &lt;QuerySet [Host(ip=192.168.8.1, mac=78:62:56:BC:D2:49, hostname=homerouter.cpe, visible=True, alias=None, Host(ip=192.168.8.101, mac=2C:54:91:7F:71:FD, hostname=XboxOne, visible=True, alias=None, Host(ip=192.168.8.103, mac=7C:1C:4E:5D:9E:A0, hostname=LGwebOSTV, visible=True, alias=None, Host(ip=192.168.8.104, mac=EC:D0:9F:06:2D:22, hostname=android-3e383c762225abbc, visible=True, alias=None, Host(ip=192.168.8.112, mac=4C:66:41:90:60:A0, hostname=Samsung-Galaxy-S7, visible=True, alias=None, Host(ip=192.168.1.254, mac=00:12:2A:96:CE:01, hostname=netiaspot.home, visible=True, alias=None, Host(ip=192.168.1.3, mac=C0:25:E9:1C:A6:1A, hostname=alarmpi.home, visible=True, alias=Raspi]&gt;</em><a class="headerlink" href="#whoisin.views.HostViewSet.queryset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whoisin.views.HostViewSet.serializer_class">
+<code class="descname">serializer_class</code><a class="headerlink" href="#whoisin.views.HostViewSet.serializer_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#whoisin.serializers.HostSerializer" title="whoisin.serializers.HostSerializer"><code class="xref py py-class docutils literal notranslate"><span class="pre">whoisin.serializers.HostSerializer</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="whoisin.views.HostViewSet.suffix">
+<code class="descname">suffix</code><em class="property"> = None</em><a class="headerlink" href="#whoisin.views.HostViewSet.suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-whoisin">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-whoisin" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="utils.html" class="btn btn-neutral" title="utils module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Piotr Czajka.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

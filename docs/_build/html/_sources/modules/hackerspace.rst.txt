@@ -1,0 +1,21 @@
+hackerspace package
+===================
+
+Submodules
+----------
+
+hackerspace.urls module
+-----------------------
+
+.. automodule:: hackerspace.urls
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: hackerspace
+    :members:
+    :undoc-members:
+    :show-inheritance:
