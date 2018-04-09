@@ -284,6 +284,20 @@ object the first time, the query is executed.</p>
 
 </dd></dl>
 
+<dl class="attribute">
+<dt id="whoisin.models.online">
+<code class="descclassname">whoisin.models.</code><code class="descname">online</code><a class="headerlink" href="#whoisin.models.online" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True if there is an online visible host in <code class="docutils literal notranslate"><span class="pre">`obj.hosts`</span></code>, False otherwise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>obj</strong> – Model instance</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
 </div>
 <div class="section" id="module-whoisin.nmapthread">
 <span id="whoisin-nmapthread-module"></span><h2>whoisin.nmapthread module<a class="headerlink" href="#module-whoisin.nmapthread" title="Permalink to this headline">¶</a></h2>
@@ -291,6 +305,11 @@ object the first time, the query is executed.</p>
 <dt id="whoisin.nmapthread.NmapThread">
 <em class="property">class </em><code class="descclassname">whoisin.nmapthread.</code><code class="descname">NmapThread</code><span class="sig-paren">(</span><em>container</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/whoisin/nmapthread.html#NmapThread"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#whoisin.nmapthread.NmapThread" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">threading.Thread</span></code></p>
+<dl class="attribute">
+<dt id="whoisin.nmapthread.NmapThread.container">
+<code class="descname">container</code><em class="property"> = &lt;utils.LockedContainer object&gt;</em><a class="headerlink" href="#whoisin.nmapthread.NmapThread.container" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 <dl class="method">
 <dt id="whoisin.nmapthread.NmapThread.get_most_complete_nmap_result">
 <code class="descname">get_most_complete_nmap_result</code><span class="sig-paren">(</span><em>nm</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/whoisin/nmapthread.html#NmapThread.get_most_complete_nmap_result"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#whoisin.nmapthread.NmapThread.get_most_complete_nmap_result" title="Permalink to this definition">¶</a></dt>
@@ -400,21 +419,6 @@ If there is a new unique host, add it to the database.</p>
 
 </dd></dl>
 
-<dl class="method">
-<dt id="whoisin.serializers.UserSerializer.is_online">
-<code class="descname">is_online</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/whoisin/serializers.html#UserSerializer.is_online"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#whoisin.serializers.UserSerializer.is_online" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return true, if there are any online <code class="docutils literal notranslate"><span class="pre">`Host`</span></code> object, which belongs to <code class="docutils literal notranslate"><span class="pre">`User`</span></code>.
-False otherwise.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>obj</strong> – <a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">`</span></a>User instalnce</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
 </dd></dl>
 
 </div>
@@ -423,8 +427,13 @@ False otherwise.</p>
 <dl class="class">
 <dt id="whoisin.views.HostViewSet">
 <em class="property">class </em><code class="descclassname">whoisin.views.</code><code class="descname">HostViewSet</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/whoisin/views.html#HostViewSet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#whoisin.views.HostViewSet" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.viewsets.ModelViewSet</span></code></p>
+<dd><p>Bases: <a class="reference internal" href="#whoisin.views.PermissionsMixin" title="whoisin.views.PermissionsMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">whoisin.views.PermissionsMixin</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.viewsets.ModelViewSet</span></code></p>
 <p>Provide views for Host model</p>
+<dl class="attribute">
+<dt id="whoisin.views.HostViewSet.basename">
+<code class="descname">basename</code><em class="property"> = None</em><a class="headerlink" href="#whoisin.views.HostViewSet.basename" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 <dl class="attribute">
 <dt id="whoisin.views.HostViewSet.filter_backends">
 <code class="descname">filter_backends</code><em class="property"> = (&lt;class 'django_filters.rest_framework.backends.DjangoFilterBackend'&gt;, &lt;class 'whoisin.filters.IsOnlineFilter'&gt;)</em><a class="headerlink" href="#whoisin.views.HostViewSet.filter_backends" title="Permalink to this definition">¶</a></dt>
@@ -434,12 +443,6 @@ False otherwise.</p>
 <dt id="whoisin.views.HostViewSet.filter_fields">
 <code class="descname">filter_fields</code><em class="property"> = ['alias', 'mac', 'visible', 'hostname', 'ip']</em><a class="headerlink" href="#whoisin.views.HostViewSet.filter_fields" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
-
-<dl class="method">
-<dt id="whoisin.views.HostViewSet.get_permissions">
-<code class="descname">get_permissions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/whoisin/views.html#HostViewSet.get_permissions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#whoisin.views.HostViewSet.get_permissions" title="Permalink to this definition">¶</a></dt>
-<dd><p>Allow only admin to modify stuff</p>
-</dd></dl>
 
 <dl class="attribute">
 <dt id="whoisin.views.HostViewSet.queryset">
@@ -452,13 +455,37 @@ False otherwise.</p>
 <dd><p>alias of <a class="reference internal" href="#whoisin.serializers.HostSerializer" title="whoisin.serializers.HostSerializer"><code class="xref py py-class docutils literal notranslate"><span class="pre">whoisin.serializers.HostSerializer</span></code></a></p>
 </dd></dl>
 
+<dl class="attribute">
+<dt id="whoisin.views.HostViewSet.suffix">
+<code class="descname">suffix</code><em class="property"> = None</em><a class="headerlink" href="#whoisin.views.HostViewSet.suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="whoisin.views.PermissionsMixin">
+<em class="property">class </em><code class="descclassname">whoisin.views.</code><code class="descname">PermissionsMixin</code><a class="reference internal" href="../_modules/whoisin/views.html#PermissionsMixin"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#whoisin.views.PermissionsMixin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Provides permission mixin, for restricting modification capabilities for normal and anonymous users,
+this must be first class accessed through MRO resolution chain (<code class="docutils literal notranslate"><span class="pre">`super()`</span></code>)</p>
+<dl class="method">
+<dt id="whoisin.views.PermissionsMixin.get_permissions">
+<code class="descname">get_permissions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/whoisin/views.html#PermissionsMixin.get_permissions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#whoisin.views.PermissionsMixin.get_permissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allow only admin to modify stuff</p>
+</dd></dl>
+
 </dd></dl>
 
 <dl class="class">
 <dt id="whoisin.views.UserViewSet">
 <em class="property">class </em><code class="descclassname">whoisin.views.</code><code class="descname">UserViewSet</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/whoisin/views.html#UserViewSet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#whoisin.views.UserViewSet" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.viewsets.ModelViewSet</span></code></p>
+<dd><p>Bases: <a class="reference internal" href="#whoisin.views.PermissionsMixin" title="whoisin.views.PermissionsMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">whoisin.views.PermissionsMixin</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.viewsets.ModelViewSet</span></code></p>
 <p>Provide views form User model</p>
+<dl class="attribute">
+<dt id="whoisin.views.UserViewSet.basename">
+<code class="descname">basename</code><em class="property"> = None</em><a class="headerlink" href="#whoisin.views.UserViewSet.basename" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 <dl class="attribute">
 <dt id="whoisin.views.UserViewSet.filter_backends">
 <code class="descname">filter_backends</code><em class="property"> = (&lt;class 'django_filters.rest_framework.backends.DjangoFilterBackend'&gt;, &lt;class 'whoisin.filters.IsOnlineFilter'&gt;)</em><a class="headerlink" href="#whoisin.views.UserViewSet.filter_backends" title="Permalink to this definition">¶</a></dt>
@@ -480,6 +507,11 @@ False otherwise.</p>
 <code class="descname">serializer_class</code><a class="headerlink" href="#whoisin.views.UserViewSet.serializer_class" title="Permalink to this definition">¶</a></dt>
 <dd><p>alias of <a class="reference internal" href="#whoisin.serializers.UserSerializer" title="whoisin.serializers.UserSerializer"><code class="xref py py-class docutils literal notranslate"><span class="pre">whoisin.serializers.UserSerializer</span></code></a></p>
 </dd></dl>
+
+<dl class="attribute">
+<dt id="whoisin.views.UserViewSet.suffix">
+<code class="descname">suffix</code><em class="property"> = None</em><a class="headerlink" href="#whoisin.views.UserViewSet.suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 

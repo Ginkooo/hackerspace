@@ -25,6 +25,8 @@ Example requests
 
 /hosts?online=true&visible=true - gets online and visible hosts (only admin can modify hosts)
 
+/users?online=true - list online users
+
 /admin - admin panel for managing users, other db records etc.
 
 /api-auth/login - auth login (Http basic authentication, for now)
