@@ -14,7 +14,7 @@ Server schedules a continuous Nmap scanning in a daemon thread. Each unique host
 
 List hackerspace online guests
 ------------------------------
-User have she's assigned hosts under `user.hosts`, if any of theese hosts is `online` and `visible`, then user is `online` to, and you can show them quering `/users?online=true`
+User have she's assigned hosts under `user.hosts`, if any of theese hosts is `online` and `visible`, then user is `online` to, and you can show them quering `/users?online=true`. To assign host to user. Go to admin panel (/admin), and to Host, then choose user
 
 Open and close intercom doors
 -----------------------------
