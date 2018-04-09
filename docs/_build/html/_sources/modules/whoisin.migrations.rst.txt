@@ -1,0 +1,38 @@
+whoisin.migrations package
+==========================
+
+Submodules
+----------
+
+whoisin.migrations.0001\_initial module
+---------------------------------------
+
+.. automodule:: whoisin.migrations.0001_initial
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+whoisin.migrations.0002\_auto\_20180409\_1555 module
+----------------------------------------------------
+
+.. automodule:: whoisin.migrations.0002_auto_20180409_1555
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+whoisin.migrations.0003\_delete\_onlineuser module
+--------------------------------------------------
+
+.. automodule:: whoisin.migrations.0003_delete_onlineuser
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: whoisin.migrations
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -25,6 +25,7 @@ class Host(models.Model):
     hostname = models.CharField(max_length=50, null=True, blank=True)
     visible = models.BooleanField(default=True)
     alias = models.CharField(max_length=50, null=True, blank=True)
+    user = models.ForeignKey(User, related_name='hosts', on_delete=models.CASCADE, null=True, blank=True)
 
     @property
     def online(self):
@@ -39,3 +40,18 @@ class Host(models.Model):
     def __repr__(self):
         return (f"Host(ip={self.ip}, mac={self.mac}, hostname={self.hostname}, "
                 f"visible={self.visible}, alias={self.alias}")
+
+
+@property
+def online(obj):
+    """Return True if there is an online visible host in ```obj.hosts```, False otherwise.
+
+    :param obj: Model instance
+    """
+    for h in obj.hosts.filter(visible=True):
+        if h.online:
+            return True
+    return False
+
+
+User.online = online

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>src &mdash; Hackerspace 0.1.0 documentation</title>
+  <title>intercom.migrations package &mdash; Hackerspace 0.1.0 documentation</title>
   
 
   
@@ -29,8 +29,8 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Usage" href="desc.html" />
-    <link rel="prev" title="Welcome to Hackerspace’s documentation!" href="../index.html" /> 
+    <link rel="next" title="manage module" href="manage.html" />
+    <link rel="prev" title="intercom package" href="intercom.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -80,13 +80,25 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">src</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="desc.html">Usage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="desc.html#features">Features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="desc.html#example-requests">Example requests</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">src</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="config.html">config module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="hackerspace.html">hackerspace package</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intercom.html">intercom package</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="intercom.html">intercom package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="intercom.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">intercom.migrations package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="intercom.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="intercom.html#module-intercom.admin">intercom.admin module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="intercom.html#module-intercom.apps">intercom.apps module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="intercom.html#module-intercom.intercom_handler">intercom.intercom_handler module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="intercom.html#module-intercom.models">intercom.models module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="intercom.html#module-intercom.tests">intercom.tests module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="intercom.html#module-intercom.views">intercom.views module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="intercom.html#module-intercom">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="manage.html">manage module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="utils.html">utils module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="whoisin.html">whoisin package</a></li>
 </ul>
@@ -136,13 +148,17 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>src</li>
+          <li><a href="modules.html">src</a> &raquo;</li>
+        
+          <li><a href="intercom.html">intercom package</a> &raquo;</li>
+        
+      <li>intercom.migrations package</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/modules/modules.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/modules/intercom.migrations.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -155,44 +171,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="src">
-<h1>src<a class="headerlink" href="#src" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="desc.html">Usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="desc.html#features">Features</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="desc.html#lists-hackerspace-online-guests">Lists hackerspace online guests</a></li>
-<li class="toctree-l2"><a class="reference internal" href="desc.html#open-and-close-intercom-doors">Open and close intercom doors</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="desc.html#example-requests">Example requests</a></li>
-<li class="toctree-l1"><a class="reference internal" href="config.html">config module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hackerspace.html">hackerspace package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="hackerspace.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hackerspace.html#module-hackerspace.settings">hackerspace.settings module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hackerspace.html#module-hackerspace.urls">hackerspace.urls module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hackerspace.html#module-hackerspace.wsgi">hackerspace.wsgi module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hackerspace.html#module-hackerspace">Module contents</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="intercom.html">intercom package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="intercom.html#module-intercom.models">intercom.models module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intercom.html#module-intercom.views">intercom.views module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intercom.html#module-intercom">Module contents</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="utils.html">utils module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="whoisin.html">whoisin package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="whoisin.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="whoisin.html#module-whoisin.filters">whoisin.filters module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="whoisin.html#module-whoisin.models">whoisin.models module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="whoisin.html#module-whoisin.nmapthread">whoisin.nmapthread module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="whoisin.html#module-whoisin.serializers">whoisin.serializers module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="whoisin.html#module-whoisin.views">whoisin.views module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="whoisin.html#module-whoisin">Module contents</a></li>
-</ul>
-</li>
-</ul>
+  <div class="section" id="intercom-migrations-package">
+<h1>intercom.migrations package<a class="headerlink" href="#intercom-migrations-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-intercom.migrations">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-intercom.migrations" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -204,10 +186,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="desc.html" class="btn btn-neutral float-right" title="Usage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="manage.html" class="btn btn-neutral float-right" title="manage module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../index.html" class="btn btn-neutral" title="Welcome to Hackerspace’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="intercom.html" class="btn btn-neutral" title="intercom package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

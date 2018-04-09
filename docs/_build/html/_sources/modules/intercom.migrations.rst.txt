@@ -1,0 +1,10 @@
+intercom.migrations package
+===========================
+
+Module contents
+---------------
+
+.. automodule:: intercom.migrations
+    :members:
+    :undoc-members:
+    :show-inheritance:

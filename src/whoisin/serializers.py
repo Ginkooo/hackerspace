@@ -1,6 +1,11 @@
+import logging
+
 from rest_framework import serializers
+from django.contrib.auth.models import User
 
 from whoisin.models import Host
+
+logger = logging.getLogger(__name__)
 
 
 class HostSerializer(serializers.ModelSerializer):
@@ -32,3 +37,11 @@ class HostSerializer(serializers.ModelSerializer):
         :param validated_data: data passed from template
         """
         self.create(validated_data)
+
+
+class UserSerializer(serializers.ModelSerializer):
+    """```Serializer``` for ```User```. Adds a few more properties to user"""
+
+    class Meta:
+        model = User
+        fields = 'username online'.split()

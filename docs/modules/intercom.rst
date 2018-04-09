@@ -1,8 +1,13 @@
 intercom package
 ================
 
-Submodules
-----------
+intercom.models module
+----------------------
+
+.. automodule:: intercom.models
+    :members:
+    :undoc-members:
+    :show-inheritance:
 
 intercom.views module
 ---------------------

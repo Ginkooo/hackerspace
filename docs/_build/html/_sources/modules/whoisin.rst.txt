@@ -4,14 +4,6 @@ whoisin package
 Submodules
 ----------
 
-whoisin.admin module
---------------------
-
-.. automodule:: whoisin.admin
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
 whoisin.filters module
 ----------------------
 
@@ -43,7 +35,6 @@ whoisin.serializers module
     :members:
     :undoc-members:
     :show-inheritance:
-
 
 whoisin.views module
 --------------------
