@@ -82,7 +82,8 @@
               <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#features">Features</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#lists-hackerspace-online-guests">Lists hackerspace online guests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#list-hackerspace-online-hosts">List hackerspace online hosts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#list-hackerspace-online-guests">List hackerspace online guests</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#open-and-close-intercom-doors">Open and close intercom doors</a></li>
 </ul>
 </li>
@@ -167,9 +168,13 @@
 </div>
 <div class="section" id="features">
 <h1>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="lists-hackerspace-online-guests">
-<h2>Lists hackerspace online guests<a class="headerlink" href="#lists-hackerspace-online-guests" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="list-hackerspace-online-hosts">
+<h2>List hackerspace online hosts<a class="headerlink" href="#list-hackerspace-online-hosts" title="Permalink to this headline">¶</a></h2>
 <p>Server schedules a continuous Nmap scanning in a daemon thread. Each unique host is added to a database. Then we can do <cite>host.online</cite> to determine if host is in the network in the moment. Every host has <cite>.visible</cite> property. It says if the host should be publicly visible or not (is basically means that we can pass <cite>?visible=true</cite> to get them. Only admin user can modify hosts, but anyone can list them.</p>
+</div>
+<div class="section" id="list-hackerspace-online-guests">
+<h2>List hackerspace online guests<a class="headerlink" href="#list-hackerspace-online-guests" title="Permalink to this headline">¶</a></h2>
+<p>User have she’s assigned hosts under <cite>user.hosts</cite>, if any of theese hosts is <cite>online</cite> and <cite>visible</cite>, then user is <cite>online</cite> to, and you can show them quering <cite>/users?online=true</cite></p>
 </div>
 <div class="section" id="open-and-close-intercom-doors">
 <h2>Open and close intercom doors<a class="headerlink" href="#open-and-close-intercom-doors" title="Permalink to this headline">¶</a></h2>

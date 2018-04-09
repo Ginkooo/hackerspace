@@ -8,9 +8,13 @@ Usage
 Features
 ========
 
-Lists hackerspace online guests
+List hackerspace online hosts
 -------------------------------
 Server schedules a continuous Nmap scanning in a daemon thread. Each unique host is added to a database. Then we can do `host.online` to determine if host is in the network in the moment. Every host has `.visible` property. It says if the host should be publicly visible or not (is basically means that we can pass `?visible=true` to get them. Only admin user can modify hosts, but anyone can list them.
+
+List hackerspace online guests
+------------------------------
+User have she's assigned hosts under `user.hosts`, if any of theese hosts is `online` and `visible`, then user is `online` to, and you can show them quering `/users?online=true`
 
 Open and close intercom doors
 -----------------------------
