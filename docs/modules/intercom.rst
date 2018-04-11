@@ -17,6 +17,14 @@ intercom.views module
     :undoc-members:
     :show-inheritance:
 
+intercom.intercom_handler module
+--------------------------------
+
+.. automodule:: intercom.intercom_handler
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
 
 Module contents
 ---------------
