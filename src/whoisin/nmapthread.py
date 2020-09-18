@@ -22,7 +22,7 @@ class NmapThread(Thread):
         :type nm: nmap.PortScanner
         """
         ret_hosts = []
-        for i in range(2):
+        for _ in range(2):
             nm.scan(config.NMAP_NETWORK, arguments=config.NMAP_ARGS)
             hosts = [nm[h] for h in nm.all_hosts()]
             if len(hosts) > len(ret_hosts):

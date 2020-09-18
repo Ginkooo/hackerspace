@@ -48,10 +48,7 @@ def online(obj):
 
     :param obj: Model instance
     """
-    for h in obj.hosts.filter(visible=True):
-        if h.online:
-            return True
-    return False
+    return any(h.online for h in obj.hosts.filter(visible=True))
 
 
 User.online = online
